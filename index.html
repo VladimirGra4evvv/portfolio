@@ -296,10 +296,10 @@
         <div class="container">
             <h2 class="section__title wow fadeInRight" data-wow-delay="0.5s">Свяжитесь со мной</h2>
             <div class="contacts__block">
-              <form action="#" class="form contacts__form">
+              <form action="send.php" method="POST" class="form contacts__form">
                 <h4 class="form__title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
                 <input class="input input__name" type="text" placeholder="Ваше имя">
-                <input class="input input__phone" type="text" placeholder="Ваш телефон">
+                <input class="input input__phone phone" type="tel" placeholder="Ваш телефон">
                 <button class="button form__button">Бесплатная консультация</button>
               </form>
               <div class="contacts__text">
@@ -355,7 +355,7 @@
         <form action="send.php" method="POST" class="form modal__form">
             <input type="text" minlength="2" class="input modal__input" placeholder="Ваше имя*" name="name" required>
             <input type="tel" class="input modal__input phone" placeholder="Ваш номер телефона*" name="phone" required data-mask="+7 (000) 000-00-00">
-            <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
+            <input type="email" class="input modal__input email" placeholder="Ваш Email*" name="email" required>
             <textarea class="message modal__message" placeholder="Сообщение" name="message"></textarea>
             <button class="button modal__button" type="submit">Отправить</button>
             <span class="modal__info">* Обязательные поля</span>
@@ -367,6 +367,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 
   </body>

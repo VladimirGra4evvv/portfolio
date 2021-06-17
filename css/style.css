@@ -438,15 +438,6 @@ template {
   margin-bottom: 38px;
 }
 
-.hero__button {
-  cursor: pointer;
-}
-
-.hero__button:hover {
-  background-color: #fba300;
-  color: #ffffff;
-}
-
 .hero__avatar-image {
   width: 389px;
   height: 389px;
@@ -810,6 +801,16 @@ template {
   width: 100%;
   min-height: 123px;
   margin-top: 15px;
+  background: #f8f8f8;
+  -webkit-box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+          box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border: none;
+  border-radius: 5px;
+  padding: 18px 20px;
+  padding-left: 50px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 .modal__button {
@@ -845,6 +846,17 @@ template {
   .contacts__text {
     -ms-flex-preferred-size: 43%;
         flex-basis: 43%;
+  }
+}
+
+@media (min-width: 992px) {
+  .button {
+    cursor: pointer;
+  }
+  .button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdde76), to(#fba300));
+    background: linear-gradient(180deg, #fdde76 0%, #fba300 100%);
+    color: #ffffff;
   }
 }
 

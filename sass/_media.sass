@@ -18,6 +18,12 @@
     .contacts
         &__text
             flex-basis: 43%
+@media (min-width: 992px)
+    .button
+        cursor: pointer
+        &:hover
+            background: linear-gradient(180deg, #fdde76 0%, #fba300 100%)
+            color: $primary
 @media (max-width: 768px)
     .hero
         &__content
@@ -65,7 +71,7 @@
         &__text
             flex-basis: 90%
             margin-left: 20px
-        &__phone, &__mail, 
+        &__phone, &__mail,
             flex-basis: 40%
         &__social
             flex-basis: 100%
@@ -86,5 +92,5 @@
             flex-basis: 80%
         &__social
             flex-basis: 80%
-        
+
 // @media (max-width: 340px)
