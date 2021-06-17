@@ -1,0 +1,47 @@
+.hero
+    padding-top: 50px
+    background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%)
+    padding-bottom: 155px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 105px
+    &__content
+        display: flex
+        justify-content: space-between
+        align-content: center
+    &__subtitle
+        display: inline-block
+        font-size: 24px
+        line-height: 28px
+        color: $secondary
+        margin-bottom: 14px
+    &__title
+        font-weight: bold
+        font-size: 50px
+        line-height: 59px
+        margin-top: 0px
+        margin-bottom: 20px
+    &__description
+        font-size: 16px
+        line-height: 28px
+        max-width: 420px
+        margin-bottom: 38px
+    &__button
+        cursor: pointer
+        &:hover
+            background-color: #fba300  
+            color: $primary
+    &__avatar
+        &-image
+            width: 389px
+            height: 389px
+            border-radius: 50%
+            object-fit: cover
+            background-color: $primary
+            border: 13px solid $primary
+.social__link
+    margin-left: 20px
+    &:first-child
+        margin-left: 0

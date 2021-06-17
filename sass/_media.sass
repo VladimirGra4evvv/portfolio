@@ -1,0 +1,90 @@
+@media (max-width: 1200px)
+    .hero
+        &__avatar
+            &-image
+                width: 350px
+                height: 350px
+                border: 10px solid $primary
+@media ( max-width: 1024px)
+    .hero
+        &__avatar
+            &-image
+                width: 300px
+                height: 300px
+                border: 8px solid $primary
+    .projects
+        &__text
+            flex-basis: 50%
+    .contacts
+        &__text
+            flex-basis: 43%
+@media (max-width: 768px)
+    .hero
+        &__content
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__text
+            order: 1
+            text-align: center
+        &__avatar
+            order: 0
+            margin-bottom: 17px
+    .section
+        padding-bottom: 0
+        &__title
+            text-align: center
+            margin-bottom: 50px
+    .features
+        &__item
+            flex-basis: 45%
+    .projects
+        &__slide
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+        &__image
+            width: 500px
+            margin-bottom: 44px
+        &__text
+            align-items: center
+            justify-content: center
+            flex-basis: 80%
+        &__title
+            text-align: center
+    .footer
+        padding-top: 80px
+        padding-bottom: 50px
+    .contacts
+        &__block
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+        &__form
+            margin-bottom: 50px
+        &__text
+            flex-basis: 90%
+            margin-left: 20px
+        &__phone, &__mail, 
+            flex-basis: 40%
+        &__social
+            flex-basis: 100%
+@media (max-width: 420px)
+    .features
+        &__block
+            justify-content: center
+        &__item
+            flex-basis: 80%
+    .contacts
+        &__form
+            flex-basis: 90%
+            padding: 30px 20px
+        &__text
+            flex-direction: column
+            flex-basis: 90%
+        &__phone, &__mail
+            flex-basis: 80%
+        &__social
+            flex-basis: 80%
+        
+// @media (max-width: 340px)
